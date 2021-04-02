@@ -1,0 +1,53 @@
+.features__wrapper {
+  padding-top: 27px;
+  padding-bottom: 46px;
+}
+
+.features__title {
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+}
+
+.features__list {
+  @include list-style;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.features__text {
+  @include fonts(14px, 400, "Arial");
+  line-height: 18px;
+  margin: 0 0 0 80px;
+}
+
+.features__item {
+  position: relative;
+  margin-bottom: 26px;
+  outline: 2px solid rgba(200, 100, 100, 0.8);
+  outline-offset: -3px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: $basic-green no-repeat center;
+    width: 60px;
+    height: 60px;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/main/leaf.png");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/main/powder.png");
+  }
+
+  &--dining::before {
+    background-image: url("../../img/main/dining.png");
+  }
+
+  &--clock::before {
+    background-image: url("../../img/main/clock.png");
+  }
+}

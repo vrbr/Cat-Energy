@@ -1,0 +1,25 @@
+.main-nav {
+  outline: 2px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -2px;
+  text-transform: uppercase;
+}
+
+.main-nav__wrapper {
+  @include fonts(20px, 500);
+  line-height: 20px;
+}
+
+.main-nav__list {
+  @include list-style;
+  border-top: 1px solid $border-logo;
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $border-logo;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.main-nav__item a {
+  color: $basic-black;
+}

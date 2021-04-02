@@ -1,0 +1,37 @@
+.promo__wrapper {
+  /*linear-gradient*/
+  background-image: url("../../img/main/promo-background-mob.jpg");
+  background-repeat: no-repeat;
+  color: $basic-white;
+  padding-top: 27px;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 auto 25px;
+  text-align: center;
+}
+
+.promo__slogan {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 27px;
+}
+
+.promo__image-wrapper {
+  width: 280px;
+  height: 271px;
+  margin: 0 auto 3px;
+}
+
+.promo__link {
+  color: $basic-white;
+  background-color: $basic-green;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 11px;
+}
