@@ -1,0 +1,107 @@
+.form__wrapper {
+  padding-bottom: 32px;
+}
+
+.form__fieldset {
+  border: 0;
+}
+
+.form__program-wrapper {
+  border-top: 1px solid $border-social;
+  border-bottom: 1px solid $border-social;
+}
+
+.form__program-list {
+  @include list-style;
+}
+
+.form__complementary-list {
+  @include list-style;
+  padding-top: 39px;
+  padding-bottom: 41px;
+}
+
+.form__legend {
+  position: relative;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 15px;
+    background-color: $basic-green;
+  }
+}
+
+.form__contacts {
+  margin-top: 26px;
+}
+
+.form__contacts-legend {
+
+  &::after {
+  width: 99px;
+  }
+}
+
+.form__comment-legend {
+  padding-bottom: 37px;
+
+  &::after {
+    width: 158px;
+  }
+}
+
+.form__complementary-legend {
+  padding-bottom: 34px;
+
+  &::after {
+    width: 136px;
+  }
+}
+
+.form__label {
+  margin-top: 13px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  min-height: 45px;
+  padding-left: 16px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  border: 1px solid $border-input;
+
+  &::placeholder {
+    @include fonts(16px, 400, "Oswald");
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+  }
+}
+
+.form__comment-input {
+  height: 150px;
+}
+
+.form__field {
+  @include fonts(14px, 400, "Arial");
+  line-height: 16px;
+  color: $basic-black;
+}
+
+.form__button {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  @include fonts(16px, 400, "Oswald");
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $basic-green;
+  border: none;
+}
