@@ -53,7 +53,7 @@
         <div class="form__wrapper">
 
           <div class="form__characteristic-wrapper">
-            <fieldset class="form__characteristic">
+            <fieldset class="form__characteristic form__fieldset">
               <legend class="visually-hidden">Информация о коте</legend>
               <p class="form__item form__characteristic-item">
                 <label class="form__label form__characteristic-label" for="name">Имя:*</label>
@@ -71,7 +71,7 @@
           </div>
 
           <div class="form__program-wrapper">
-            <fieldset class="form__program">
+            <fieldset class="form__program form__fieldset">
               <legend class="visually-hidden">Вид программы</legend>
               <ul class="form__program-list">
                 <li class="form__program-item">
@@ -91,15 +91,15 @@
           </div>
 
           <div class="form__contacts-wrapper">
-            <fieldset class="form__contacts">
+            <fieldset class="form__contacts form__fieldset">
               <legend class="form__legend form__contacts-legend">Контактные данные (владельца кота)</legend>
               <p class="form__item form__contacts-item">
-                <label class="form__label form__contacts-label">E-mail:*</label>
+                <label class="form__label form__contacts-label" for="email">E-mail:*</label>
                 <input class="form__input form__contacts-input" type="email" name="contact" id="email" placeholder="kuklachev@gmail.com" required>
                 <!--<svg></svg>-->
               </p>
               <p class="form__item form__contacts-item">
-                <label class="form__label form__contacts-label">Телефон:*</label>
+                <label class="form__label form__contacts-label" for="tel">Телефон:*</label>
                 <input class="form__input form__contacts-input" type="tel" name="contact" id="tel" placeholder="8 (960) 900-60-90" required>
                 <!--<svg></svg>-->
               </p>
@@ -107,14 +107,14 @@
           </div>
 
           <div class="form__comment-wrapper">
-            <fieldset class="form__comment">
+            <fieldset class="form__comment form__fieldset">
               <legend class="form__legend form__comment-legend">Комментарий</legend>
-              <textarea class="form__input form__comment-input" name="comment" cols="" rows="" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__input form__comment-input" name="comment" cols="30" rows="20" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
           </div>
 
           <div class="form__complementary-wrapper">
-            <fieldset class="form__complementary">
+            <fieldset class="form__complementary form__fieldset">
               <legend class="form__legend form__complementary-legend">Дополнительно</legend>
 
               <ul class="form__complementary-list">
