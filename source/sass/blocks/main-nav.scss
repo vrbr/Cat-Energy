@@ -4,8 +4,13 @@
   text-transform: uppercase;
 }
 
+.main-nav__toggle {
+  background-color: transparent;
+  border: 0;
+}
+
 .main-nav__wrapper {
-  @include fonts(20px, 500);
+  @include fonts(20px, 500, "Oswald");
   line-height: 20px;
 }
 
@@ -15,9 +20,9 @@
 }
 
 .main-nav__item {
-  border-bottom: 1px solid $border-logo;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid $border-logo;
 }
 
 .main-nav__item a {

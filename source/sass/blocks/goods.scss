@@ -1,0 +1,11 @@
+.goods__title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-super-grey;
+}
+
+.goods__line {
+  @include fonts(14px, 400, "Arial");
+  line-height: 14px;
+}
