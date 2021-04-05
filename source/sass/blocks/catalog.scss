@@ -1,0 +1,62 @@
+.catalog {
+  background-color: $basic-grey;
+  outline: 2px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -2px;
+}
+
+.catalog__wrapper {
+  padding-top: 11px;
+}
+
+.catalog__list {
+  @include list-style;
+}
+
+.catalog__title {
+  @include fonts(24px, 400);
+  color: $basic-black;
+  line-height: 37px;
+  text-transform: uppercase;
+  outline: 2px solid rgba(135, 177, 68, 0.8);
+  outline-offset: -4px;
+}
+
+.catalog__item {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  outline: 2px solid rgba(0, 100, 100, 0.8);
+  outline-offset: -3px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: $basic-green no-repeat center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &--cat-slim::before { /*не помещаются коты :( */
+    background-image: url("../../img/main/cat-slim.svg");
+  }
+
+  &--cat-pro::before {
+    background-image: url("../../img/main/cat-pro.svg");
+  }
+}
+
+
+.catalog__text {
+  @include fonts(14px, 400, "Arial");
+  line-height: 18px;
+}
+
+
+.catalog__link {
+  color: $basic-black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
