@@ -6,7 +6,7 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
-  color :$basic-black;
+  color: $basic-black;
 
   &::after {
     position: absolute;
@@ -23,9 +23,9 @@
 }
 
 .additionally__table-link {
+  @include fonts(16px, 400, "Oswald");
   padding-top: 10px;
   padding-bottom: 10px;
-  @include fonts(16px, 400, "Oswald");
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-white;

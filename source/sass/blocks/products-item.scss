@@ -4,9 +4,9 @@
 }
 
 .products-item__link {
+  @include fonts(16px, 400, "Oswald");
   padding-top: 10px;
   padding-bottom: 10px;
-  @include fonts(16px, 400, "Oswald");
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-white;
@@ -33,9 +33,9 @@
 }
 
 .products__link-more {
+  @include fonts(16px, 400, "Oswald");
   padding-top: 10px;
   padding-bottom: 10px;
-  @include fonts(16px, 400, "Oswald");
   line-height: 20px;
   text-transform: uppercase;
   color: $special-dark-grey;
