@@ -1,0 +1,28 @@
+.products__item {
+  padding-bottom: 25px;
+  border-top: 1px solid $border-catalog;
+  border-bottom: 1px solid $border-catalog;
+}
+
+.products__title-more {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-more;
+}
+
+.products__text-more {
+  @include fonts(12px, 400, "Arial");
+  line-height: 16px;
+}
+
+.products__link-more {
+  @include fonts(16px, 400, "Oswald");
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+  border: none;
+}

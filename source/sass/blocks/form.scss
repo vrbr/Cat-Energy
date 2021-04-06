@@ -41,9 +41,8 @@
 }
 
 .form__contacts-legend {
-
   &::after {
-  width: 99px;
+    width: 99px;
   }
 }
 
@@ -96,9 +95,9 @@
 }
 
 .form__button {
+  @include fonts(16px, 400, "Oswald");
   padding-top: 7px;
   padding-bottom: 7px;
-  @include fonts(16px, 400, "Oswald");
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-white;
