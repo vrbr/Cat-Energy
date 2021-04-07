@@ -1,25 +1,61 @@
+/* общая обертка */
+
 .features__wrapper {
   padding-top: 27px;
-  padding-bottom: 46px;
+  padding-bottom: 42px;
+
+  outline: 2px solid rgba(0, 100, 100, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 11px;
+    margin: 0 110px;
+  }
 }
 
+/* заголовок */
+
 .features__title {
+  width: 280px;
+  margin: 0 auto 38px;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
+
+/* список лишек */
 
 .features__list {
   @include list-style;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 58px;/*на глаз*/
+  }
 }
 
-.features__text {
-  @include fonts(14px, 400, "Arial");
-  line-height: 18px;
-  margin: 0 0 0 80px;
-}
+/* лишки */
 
 .features__item {
   position: relative;
@@ -30,9 +66,9 @@
   &::before {
     position: absolute;
     content: "";
-    background: $basic-green no-repeat center;
     width: 60px;
     height: 60px;
+    background: $basic-green no-repeat center;
   }
 
   &--leaf::before {
@@ -49,5 +85,68 @@
 
   &--clock::before {
     background-image: url("../../img/main/clock.png");
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    padding-top: 151px;
+    padding-bottom: 100px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 30px;/*на глаз*/
+      width: 80px;
+      height: 80px;
+      background: $basic-green no-repeat center;
+    }
+
+    &--leaf::before {/*не нравится дублирование свгшек*/
+      background-image: url("../../img/main/leaf.png");
+    }
+
+    &--powder::before {
+      background-image: url("../../img/main/powder.png");
+    }
+
+    &--dining::before {
+      background-image: url("../../img/main/dining.png");
+    }
+
+    &--clock::before {
+      background-image: url("../../img/main/clock.png");
+    }
+
+    &:last-child {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+/* текст */
+
+.features__text {
+  @include fonts(14px, 400, "Arial");
+  position: relative;
+  margin: 0 0 0 80px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::after {/*каждому тексту своя цифра*/
+      position: absolute;
+      content: "1";
+      top: -151px;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
   }
 }

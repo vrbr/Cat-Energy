@@ -1,45 +1,183 @@
-.example__wrapper {
-  background-color: $basic-grey;
-  padding-top: 27px;
-  padding-bottom: 31px;
+.example {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
 }
 
+/* обертка общая */
+
+.example__wrapper {
+  padding-top: 27px;
+  padding-bottom: 31px;
+  background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    border-top: 1px solid $border-logo;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 110px;
+    background-color: $basic-grey;
+    border: none;
+  }
+}
+
+/* обертка с текстом */
+
+.example__story {
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+/* заголовок */
+
 .example__title {
+  width: 280px;
+  margin: 0 auto 33px;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0 0 63px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+    background-color: $basic-white;/*ну почти)))*/
+  }
 }
+
+/* текст */
 
 .example__text {
   @include fonts(14px, 400, "Arial");
+  margin: 0 auto 25px;
+  width: 280px;
   line-height: 18px;
-  margin-bottom: 25px;
   outline: 2px solid rgba(200, 150, 120, 0.8);
   outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+    margin: 0 0 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-bottom: 69px;
+  }
 }
+
+/* обертка списка определений */
+
+.example__statistics-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+    width: 400px;
+  }
+}
+
+/* список определений */
+
+.example__statistics-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto 34px;
+
+  @media (min-width: $tablet-width) {
+    width: 366px;
+    margin: 0;
+  }
+}
+
+/* наименование */
 
 .example__number {
   @include fonts(12px, 400, "Arial");
+  position: absolute;
+  top: 47px;
+  width: 77px;
+  padding: 0 10px;
   line-height: 12px;
+  text-align: center;
   text-transform: lowercase;
+
+  &:first-child {
+    left: 10px;
+  }
+
+  &:last-child {
+    right: 10px;/*чота не двигается*/
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 63px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
+/* кол-во */
+
 .example__description {
+  width: 124px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 18px;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
   color: $basic-black;
   border: 1px solid $special-grey;
   border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    padding-bottom: 25px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
-.example__statistics-list {
-  margin-bottom: 34px;
-}
+/* цена */
 
 .example__price {
+  width: 280px;
+  margin: 0 auto 32px;
   font-size: 14px;
   line-height: 20px;
-  color: $basic-black;
+  text-align: center;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 175px;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: right;
+  }
 }

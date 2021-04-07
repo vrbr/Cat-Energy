@@ -1,62 +1,220 @@
 .catalog {
-  background-color: $basic-grey;
   outline: 2px solid rgba(0, 255, 0, 0.8);
   outline-offset: -2px;
 }
 
-.catalog__wrapper {
-  padding-top: 11px;
-}
-
 .catalog__list {
   @include list-style;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+/* заголовок */
 
 .catalog__title {
   @include fonts(24px, 400);
+  margin: 0 0 29px 91px;
   color: $basic-black;
   line-height: 37px;
   text-transform: uppercase;
   outline: 2px solid rgba(135, 177, 68, 0.8);
   outline-offset: -4px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 162px;
+  }
 }
+
+/* лишки */
 
 .catalog__item {
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 0 20px 20px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+  background-color: $basic-grey;
   outline: 2px solid rgba(0, 100, 100, 0.8);
   outline-offset: -3px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  /* зеленые круги */
 
   &::before {
     position: absolute;
     content: "";
-    background: $basic-green no-repeat center;
+    left: 20px;
+    top: 24px;
     width: 50px;
     height: 50px;
+    background: $basic-green no-repeat center;
     border-radius: 50%;
   }
 
-  &--cat-slim::before { /*не помещаются коты :( */
-    background-image: url("../../img/main/cat-slim.svg");
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 30px;
+    padding: 77px 0 57px 52px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 92px;
+      left: 446px;
+      width: 200px;
+      height: 200px;
+    }
   }
 
-  &--cat-pro::before {
-    background-image: url("../../img/main/cat-pro.svg");
+  @media (min-width: $desktop-width) {
+    box-sizing: border-box;
+    width: 570px;
+    margin-top: 82px;
+    margin-bottom: 71px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 47px;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &:first-child {
+      margin-left: 110px;
+    }
+
+    &:last-child {
+      margin-right: 110px;
+      margin-bottom: 71px;
+    }
+  }
+
+  /* свгшки */
+  /* худой */
+
+  &--cat-slim {
+    position: absolute;
+    top: 24px;
+    left: 25px;
+
+    @media (min-width: $tablet-width) {
+      top: 92px;
+      left: 476px;
+      width: 140px;
+      height: 192px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 67px;
+      width: 70px;
+      height: 97px;
+    }
+  }
+  /* мощный */
+
+  &--cat-pro {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+
+    @media (min-width: $tablet-width) {
+      top: 135px;
+      left: 411px;
+      width: 269px;
+      height: 112px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 67px;
+      left: 33px;
+      width: 134px;
+      height: 56px;
+    }
   }
 }
 
+/* текст в обеих карточках */
 
 .catalog__text {
   @include fonts(14px, 400, "Arial");
+  margin: 0 33px 42px 20px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 48px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 23px;
+  }
 }
 
+/* текст в похудении */
+
+.catalog__text--slim {
+  @media (min-width: $tablet-width) {
+    width: 377px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+  }
+}
+
+/* текст в наборе массы */
+
+.catalog__text--pro {
+  @media (min-width: $tablet-width) {
+    width: 342px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+  }
+}
+
+/* ссылка */
 
 .catalog__link {
-  color: $basic-black;
+  position: relative;
+  margin-left: 20px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  color: $basic-black;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -18px;
+    width: 240px;
+    height: 1px;
+    background-color: $border-social;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
 }
