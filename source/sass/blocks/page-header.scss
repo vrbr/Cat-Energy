@@ -1,9 +1,33 @@
+/* вся голова */
+
 .page-header {
+  display: flex;
+  flex-direction: column;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 170px;
+  }
 }
 
+/* логотип */
+
 .page-header__logo {
-  outline: 2px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -2px;
+  height: 66px;
   border-bottom: 1px solid $border-logo;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+  }
 }

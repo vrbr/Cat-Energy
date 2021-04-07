@@ -5,11 +5,39 @@
 
 .contacts__wrapper {
   padding-top: 28px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
+/* блок с инфой */
+
 .contacts__info {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 28px;
+  padding: 0 20px;
+  outline: 2px solid rgba(200, 100, 100, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 71px 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 570px;
+    padding: 62px 89px 60px 76px;
+    background-color: $basic-white;
+  }
 }
+
+/* заголовок */
 
 .contacts__title {
   font-size: 16px;
@@ -18,17 +46,43 @@
   color: $basic-black;
   outline: 2px solid rgba(195, 247, 54, 0.8);
   outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
+
+/* адрес */
 
 .contacts__text {
   @include fonts(14px, 400, "Arial");
+  margin: 0;
   line-height: 20px;
   outline: 2px solid rgba(180, 110, 212, 0.8);
   outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
+
+/* блок с картой */
 
 .contacts__map-wrapper {
   width: 320px;
   height: 362px;
   background-color: $basic-grey;
+
+  /*@media (min-width: $tablet-width) {}
+  поменять карту*/
+  /*@media (min-width: $desktop-width) {}
+  поменять карту*/
 }

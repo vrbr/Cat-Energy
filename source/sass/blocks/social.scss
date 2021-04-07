@@ -1,14 +1,23 @@
 .social__list {
   @include list-style;
+  display: flex;
   min-height: 63px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
-  padding: 20px 97px 21px 93px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
+/* лишки соцсетей */
+
 .social__item {
-  width: 22px;
   margin-right: 38px;
+  width: 22px;
 
   &:last-child {
     margin-right: 0;
