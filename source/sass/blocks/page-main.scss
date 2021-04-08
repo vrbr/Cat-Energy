@@ -1,9 +1,24 @@
 .page-main__title {
-  margin-bottom: 37px;
+  width: 280px;
+  margin: 0 auto 27px;
   padding-top: 27px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin-bottom: 54px;
+    margin-left: 70px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .page-main__title-catalog {
@@ -11,8 +26,22 @@
 }
 
 .page-main__text {
-  margin-bottom: 39px;
+  width: 280px;
+  margin: 0 auto 26px;
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    margin-left: 70px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
