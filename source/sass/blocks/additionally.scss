@@ -1,10 +1,30 @@
+/* доп товары */
+
 .additionally__wrapper {
+  width: 280px;
+  margin: 0 auto;
   padding-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-top: 48px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin-left: 40px;
+    padding-top: 12px;
+  }
 }
 
+/* заголовок */
+
 .additionally__title {
+  @include fonts(24px, 400, "Oswald");
   position: relative;
-  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 36px;
   line-height: 24px;
   color: $basic-black;
 
@@ -12,39 +32,191 @@
     position: absolute;
     content: "";
     top: 15px;
+    right: -20px;
     width: 53px;
     height: 3px;
     background-color: $basic-green;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 80px;
+    padding-top: 20px;
+    padding-left: 67px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 40px;
+      width: 328px;
+      height: 3px;
+      background-color: $basic-green;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: 0;
+      width: 30px;
+      height: 3px;
+      background-color: $basic-green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 0;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 40px;
+      right: -110px;
+      width: 957px;
+      height: 3px;
+      background-color: $basic-green;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: -110px;
+      width: 70px;
+      height: 3px;
+      background-color: $basic-green;
+    }
+  }
 }
 
+/* карточки */
+
 .additionally__goods {
+  padding-top: 13px;
+  padding-bottom: 15px;
   border-top: 1px solid $border-goods;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+    padding: 26px 38px 28px;
+    border: 1px solid $border-goods;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    flex-wrap: nowrap;
+    padding: 15px 0 17px 2px;
+    border: none;
+    border-top: 1px solid $border-goods;
+  }
 }
+
+.additionally__goods-last {
+  border-bottom: 1px solid $border-goods;
+}
+
+/* кнопка */
 
 .additionally__table-link {
   @include fonts(16px, 400, "Oswald");
+  display: block;
+  width: 280px;
+  margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $basic-white;
   background-color: $basic-green;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-left: 93px;
+    padding-right: 93px;
+  }
 }
 
+/* бонус */
+
 .additionally__bonus {
-  padding-top: 58px;
-  padding-bottom: 43px;
   width: 280px;
+  height: 289px;
+  margin-top: 39px;
+  text-align: center;
   background: url("../../img/main/cat-in-a-case.jpg") no-repeat;
   background-color: $basic-green;
   background-position: 0 0;
   background-size: 280px 289px;/*собрать в одну кучу бэки*/
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    margin-top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0;
+  }
 }
+
+/* бонусный текст */
 
 .additionally__text {
   @include fonts(16px, 400, "Arial");
+  width: 161px;
+  margin: 0 auto;
   line-height: 20px;
+  text-align: center;
   color: $basic-white;
+}
+
+/* ГРИДЫ ничего умнее пока не придумал */
+
+@media (min-width: $desktop-width) {
+  .additionally__goods-preview {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    grid-template-rows: 72px 72px 72px 72px;
+    grid-gap: 0 80px;
+    width: 1220px;
+  }
+
+  .additionally__goods:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .additionally__goods:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .additionally__goods:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .additionally__goods:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .additionally__bonus {
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
 }

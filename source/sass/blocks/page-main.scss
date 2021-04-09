@@ -23,6 +23,18 @@
 
 .page-main__title-catalog {
   margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto 56px;
+    padding-top: 41px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .page-main__text {
