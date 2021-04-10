@@ -1,11 +1,55 @@
+/* заголовок в карточке доп товаров */
+
 .goods__title {
-  font-size: 16px;
+  @include fonts(16px, 400, "Oswald");
+  margin: 0 0 13px;
   line-height: 16px;
   text-transform: uppercase;
   color: $special-super-grey;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
+
+/* таблица */
+
+.goods__table {
+  width: 280px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: 225px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin-left: auto;
+    margin-top: 10px;
+  }
+}
+
+/* строка */
 
 .goods__line {
   @include fonts(14px, 400, "Arial");
-  line-height: 14px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.goods__name {
+  text-align: left;
+}
+
+.goods__description {
+  text-align: right;
 }

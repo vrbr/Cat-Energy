@@ -1,15 +1,92 @@
+/* карточки */
+
 .products-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
   padding-bottom: 25px;
   border-top: 1px solid $border-catalog;
+  outline: 2px solid rgba(200, 150, 50, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin-bottom: 50px;
+    background-color: $basic-grey;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 0 40px 63px;
+  }
 }
+
+.products-item--last {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+  }
+}
+
+/* блок с картинкой */
+
+.products-item__preview {
+  width: 140px;
+  height: 144px;
+  outline: 2px solid rgba(200, 100, 100, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+  }
+}
+
+.products__image {
+  /*вставить что-то мелкое на фон*/
+  outline: 2px solid rgba(200, 150, 50, 0.8);
+  outline-offset: -3px;
+}
+
+/* блок с описанием */
+
+.products-item__information {
+  width: 140px;
+  height: 144px;
+  outline: 2px solid rgba(0, 100, 100, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-top: -140px;
+    padding: 161px 37px 33px 38px;
+  }
+}
+
+/* кнопка */
 
 .products-item__link {
   @include fonts(16px, 400, "Oswald");
+  display: block;
+  width: 280px;
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $basic-white;
   background-color: $basic-green;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }

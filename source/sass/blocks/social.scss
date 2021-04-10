@@ -1,9 +1,12 @@
 .social__list {
   @include list-style;
   display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   min-height: 63px;
   margin-left: 20px;
   margin-right: 20px;
+  padding: 20px 77px 21px 67px;
   align-items: center;
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
@@ -16,10 +19,13 @@
 /* лишки соцсетей */
 
 .social__item {
-  margin-right: 38px;
-  width: 22px;
+  margin: 0;
+}
 
-  &:last-child {
-    margin-right: 0;
-  }
+.social__item--vkontakte {
+  margin-right: 36px;
+}
+
+.social__item--instagram {
+  margin-right: 39px;
 }

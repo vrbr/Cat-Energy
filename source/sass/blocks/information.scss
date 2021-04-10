@@ -1,11 +1,56 @@
+/* заголовок */
+
 .information__title {
-  font-size: 16px;
-  line-height: 20px;
+  @include fonts(16px, 400, "Oswald");
+  width: 80px;
+  margin: 0;
+  padding: 19px 84px 14px 0;
+  font-weight: 400;
   text-transform: uppercase;
   color: $special-super-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    margin: 0 auto 21px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
+
+/* таблица */
+
+.information__table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* строка */
 
 .information__line {
   @include fonts(12px, 400, "Arial");
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    @include fonts(16px, 400, "Arial");
+    display: block;
+    border-bottom: 1px solid $border-goods;
+  }
+}
+
+/* наименование */
+
+.information__name,
+.information__description {
+  width: 70px;
+
+  @media (min-width: $tablet-width) {
+    width: 125px;
+  }
+}
+/* описание */
+
+.information__description {
+  text-align: right;
 }
