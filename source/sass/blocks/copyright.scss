@@ -9,10 +9,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 14px;
+  }
 }
 
 .copyright__text {
   @include fonts(16px, 400, "Arial");
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 22px;
+  }
 }

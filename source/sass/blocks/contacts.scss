@@ -7,12 +7,12 @@
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    padding-top: 66px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    padding: 0;
   }
 }
 
@@ -21,20 +21,24 @@
 .contacts__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 28px;
-  padding: 0 20px;
+  margin-bottom: 26px;
+  padding: 0 6%;
   outline: 2px solid rgba(200, 100, 100, 0.8);
   outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 71px 51px;
+    padding: 0 9.3% 33px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
+    top: 92px;
+    left: 7.5%;
     width: 570px;
-    padding: 62px 89px 60px 76px;
+    padding: 66px 82px 60px 77px;
+    box-sizing: border-box;
     background-color: $basic-white;
+    z-index: 1;
   }
 }
 
@@ -42,16 +46,25 @@
 
 .contacts__title {
   @include fonts(16px, 400, "Oswald");
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
-  color: $basic-black;
+  color: $special-more;
   outline: 2px solid rgba(195, 247, 54, 0.8);
   outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 26px;
+  }
+}
+
+.contacts__title,
+.contacts__text {
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 33%;
   }
 }
 
@@ -78,12 +91,39 @@
 /* блок с картой */
 
 .contacts__map-wrapper {
-  width: 320px;
-  height: 362px;
+  position: relative;
+  background: url("../../img/main/location.png") no-repeat;
   background-color: $basic-grey;
+  background-position: center 0;
 
   /*@media (min-width: $tablet-width) {}
   поменять карту*/
   /*@media (min-width: $desktop-width) {}
   поменять карту*/
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 139px;
+    left: 50%;
+    width: 57px;
+    height: 53px;
+    background: url("../../img/main/map-pin.png") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 113px;
+      height: 106px;
+      left: 50%;
+      top: 146px;
+    }
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
