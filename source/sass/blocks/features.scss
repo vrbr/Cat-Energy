@@ -74,19 +74,19 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/main/leaf.png");
+    background-image: url("../img/main/leaf.png");
   }
 
   &--powder::before {
-    background-image: url("../../img/main/powder.png");
+    background-image: url("../img/main/powder.png");
   }
 
   &--dining::before {
-    background-image: url("../../img/main/dining.png");
+    background-image: url("../img/main/dining.png");
   }
 
   &--clock::before {
-    background-image: url("../../img/main/clock.png");
+    background-image: url("../img/main/clock.png");
   }
 
   &:last-child {
@@ -122,7 +122,7 @@
     }
 
     &--leaf::before {/*не нравится дублирование свгшек*/
-      background-image: url("../../img/main/leaf.png");
+      background-image: url("../img/main/leaf.png");
     }
 
     &--leaf::after {
@@ -131,7 +131,7 @@
     }
 
     &--powder::before {
-      background-image: url("../../img/main/powder.png");
+      background-image: url("../img/main/powder.png");
     }
 
     &--powder::after {
@@ -140,7 +140,7 @@
     }
 
     &--dining::before {
-      background-image: url("../../img/main/dining.png");
+      background-image: url("../img/main/dining.png");
     }
 
     &--dining::after {
@@ -149,7 +149,7 @@
     }
 
     &--clock::before {
-      background-image: url("../../img/main/clock.png");
+      background-image: url("../img/main/clock.png");
     }
 
     &--clock::after {

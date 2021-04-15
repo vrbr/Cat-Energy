@@ -1,7 +1,7 @@
 .promo {
   @media (min-width: $desktop-width) {
     margin-top: -121px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 694px), url("../../img/main/promo-background-desk.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 694px), url("../img/main/promo-background-desk.jpg");
     background-repeat: no-repeat;
     background-size: 720px 694px;
     background-position: right 0;
@@ -11,7 +11,7 @@
 .promo__wrapper {
   padding-top: 27px;
   color: $basic-white;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 320px, rgba(104, 183, 56, 0.85) 302px), url("../../img/main/promo-background-mob.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 320px, rgba(104, 183, 56, 0.85) 302px), url("../img/main/promo-background-mob.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: center 0;

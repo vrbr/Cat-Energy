@@ -92,7 +92,7 @@
 
 .contacts__map-wrapper {
   position: relative;
-  background: url("../../img/main/location.png") no-repeat;
+  background: url("../img/main/location.png") no-repeat;
   background-color: $basic-grey;
   background-position: center 0;
 
@@ -108,7 +108,7 @@
     left: 50%;
     width: 57px;
     height: 53px;
-    background: url("../../img/main/map-pin.png") no-repeat;
+    background: url("../img/main/map-pin.png") no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 113px;
