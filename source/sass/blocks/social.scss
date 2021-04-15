@@ -4,14 +4,16 @@
   flex-wrap: wrap;
   box-sizing: border-box;
   min-height: 63px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 20px 77px 21px 67px;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  padding: 20px 76px 16px 73px;
   align-items: center;
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0 5px 0 38px;
     border: none;
   }
 }
@@ -27,5 +29,5 @@
 }
 
 .social__item--instagram {
-  margin-right: 39px;
+  margin-right: 33px;
 }

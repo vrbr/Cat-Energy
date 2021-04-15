@@ -1,33 +1,37 @@
 /* вся голова */
 
 .page-header {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100px;
+    min-width: 768px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 170px;
+    min-width: 1440px;
   }
 }
 
 /* логотип */
 
-.page-header__logo {
-  height: 66px;
-  border-bottom: 1px solid $border-logo;
+.page-header__logo-wrapper {
+  width: 320px;
+  height: 65px;
 
   @media (min-width: $tablet-width) {
-    border: 0;
+    width: 174px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    border: 0;
-  }
+.page-header__logo {
+  display: block;
+  width: 190px;
+  height: 38px;
+  margin-left: 6.25%;
+  padding-top: 13px;
 }

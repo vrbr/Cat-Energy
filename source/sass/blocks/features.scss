@@ -1,37 +1,36 @@
 /* общая обертка */
 
 .features__wrapper {
-  padding-top: 27px;
-  padding-bottom: 42px;
+  padding-top: 23px;
+  padding-bottom: 48px;
 
   outline: 2px solid rgba(0, 100, 100, 0.8);
   outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 45px;
-    padding-bottom: 47px;
-    margin: 0 30px;
+    margin: 0 3.9%;
+    padding-top: 35px;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 71px;
-    padding-bottom: 11px;
-    margin: 0 110px;
+    margin: 0 110px -31px;
+    padding: 0;
   }
 }
 
 /* заголовок */
 
 .features__title {
+  @include fonts(36px, 400);
   width: 280px;
-  margin: 0 auto 38px;
-  font-size: 36px;
+  margin: 0 auto 39px;
   line-height: 40px;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -41,17 +40,20 @@
 
 .features__list {
   @include list-style;
-  padding: 0 20px;
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0;
+    grid-gap: 18px 60px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 58px;/*на глаз*/
+    grid-column-gap: 80px;
   }
 }
 
@@ -72,19 +74,19 @@
   }
 
   &--leaf::before {
-    background-image: url("../../img/main/leaf.png");
+    background-image: url("../img/main/leaf.png");
   }
 
   &--powder::before {
-    background-image: url("../../img/main/powder.png");
+    background-image: url("../img/main/powder.png");
   }
 
   &--dining::before {
-    background-image: url("../../img/main/dining.png");
+    background-image: url("../img/main/dining.png");
   }
 
   &--clock::before {
-    background-image: url("../../img/main/clock.png");
+    background-image: url("../img/main/clock.png");
   }
 
   &:last-child {
@@ -92,37 +94,67 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 260px;
+    width: 100%;
+    margin-bottom: 0;
     padding-top: 151px;
     padding-bottom: 100px;
 
     &::before {
       position: absolute;
       content: "";
-      top: 30px;/*на глаз*/
+      top: 38px;
       width: 80px;
       height: 80px;
       background: $basic-green no-repeat center;
+
+      @media (min-width: $desktop-width) {
+        top: 39px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+      z-index: 1;
     }
 
     &--leaf::before {/*не нравится дублирование свгшек*/
-      background-image: url("../../img/main/leaf.png");
+      background-image: url("../img/main/leaf.png");
+    }
+
+    &--leaf::after {
+      content: "1";
+      right: 15px;
     }
 
     &--powder::before {
-      background-image: url("../../img/main/powder.png");
+      background-image: url("../img/main/powder.png");
+    }
+
+    &--powder::after {
+      content: "2";
+      right: 0;
     }
 
     &--dining::before {
-      background-image: url("../../img/main/dining.png");
+      background-image: url("../img/main/dining.png");
+    }
+
+    &--dining::after {
+      content: "3";
+      right: -2px;
     }
 
     &--clock::before {
-      background-image: url("../../img/main/clock.png");
+      background-image: url("../img/main/clock.png");
     }
 
-    &:last-child {
-      margin-bottom: 26px;
+    &--clock::after {
+      content: "4";
+      right: -4px;
     }
   }
 }
@@ -132,21 +164,13 @@
 .features__text {
   @include fonts(14px, 400, "Arial");
   position: relative;
-  margin: 0 0 0 80px;
+  margin: 0 0 0 28.5%;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 16px;
     line-height: 24px;
-
-    &::after {/*каждому тексту своя цифра*/
-      position: absolute;
-      content: "1";
-      top: -151px;
-      font-size: 280px;
-      line-height: 280px;
-      color: $basic-grey;
-    }
+    z-index: 2;
   }
 }

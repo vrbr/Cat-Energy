@@ -3,6 +3,14 @@
   outline-offset: -2px;
 }
 
+.catalog__wrapper {
+  padding-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .catalog__list {
   @include list-style;
 
@@ -16,7 +24,7 @@
 
 .catalog__title {
   @include fonts(24px, 400);
-  margin: 0 0 29px 91px;
+  margin: 0 0 29px 32.4%;
   color: $basic-black;
   line-height: 37px;
   text-transform: uppercase;
@@ -38,7 +46,9 @@
 
 .catalog__item {
   position: relative;
-  margin: 0 20px 20px;
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  margin-bottom: 20px;
   padding-top: 30px;
   padding-bottom: 22px;
   background-color: $basic-grey;
@@ -54,8 +64,8 @@
   &::before {
     position: absolute;
     content: "";
-    left: 20px;
-    top: 24px;
+    left: 8%;
+    top: 23px;
     width: 50px;
     height: 50px;
     background: $basic-green no-repeat center;
@@ -63,14 +73,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px 30px;
-    padding: 77px 0 57px 52px;
+    margin-left: 3.9%;
+    margin-right: 3.9%;
+    margin-bottom: 30px;
+    padding: 70px 0 67px 7%;
 
     &::before {
       position: absolute;
       content: "";
-      top: 92px;
-      left: 446px;
+      top: 22.7%;
+      right: 8.6%;
+      left: auto;
       width: 200px;
       height: 200px;
     }
@@ -81,6 +94,7 @@
     width: 570px;
     margin-top: 82px;
     margin-bottom: 71px;
+    padding: 80px 0 58px 52px;
 
     &::before {
       position: absolute;
@@ -93,6 +107,7 @@
 
     &:first-child {
       margin-left: 110px;
+      margin-right: 20px;
     }
 
     &:last-child {
@@ -106,12 +121,13 @@
 
   &-cat-slim {
     position: absolute;
-    top: 24px;
-    left: 25px;
+    top: 21px;
+    left: 10.3%;
 
     @media (min-width: $tablet-width) {
-      top: 92px;
-      left: 476px;
+      top: 20%;
+      left: auto;
+      right: 13%;
       width: 140px;
       height: 192px;
     }
@@ -127,11 +143,11 @@
 
   &-cat-pro {
     position: absolute;
-    top: 35px;
-    left: 10px;
+    top: 33px;
+    left: 5%;
 
     @media (min-width: $tablet-width) {
-      top: 135px;
+      top: 127px;
       left: 411px;
       width: 269px;
       height: 112px;
@@ -150,17 +166,32 @@
 
 .catalog__text {
   @include fonts(14px, 400, "Arial");
-  margin: 0 33px 42px 20px;
+  margin: 0 7% 42px;
   line-height: 18px;
 
+  &::after {
+    position: absolute;
+    content: "";
+    width: 85.7%;
+    height: 1px;
+    left: 7%;
+    bottom: 22%;
+    background-color: $border-social;
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 0 0 48px;
+    margin: 0 0 51px;
     font-size: 16px;
     line-height: 24px;
+
+    &::after {
+      width: 0;
+      height: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 23px;
+    margin: 0 0 25px;
   }
 }
 
@@ -168,7 +199,7 @@
 
 .catalog__text--slim {
   @media (min-width: $tablet-width) {
-    width: 377px;
+    width: 58%;
   }
 
   @media (min-width: $desktop-width) {
@@ -192,29 +223,15 @@
 
 .catalog__link {
   position: relative;
-  margin-left: 20px;
+  margin-left: 7%;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: $basic-black;
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: -18px;
-    width: 240px;
-    height: 1px;
-    background-color: $border-social;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 20px;
     line-height: 30px;
-
-    &::before {
-      width: 0;
-      height: 0;
-    }
   }
 }
