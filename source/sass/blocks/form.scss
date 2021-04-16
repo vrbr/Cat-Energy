@@ -4,29 +4,28 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 70px;
+    padding-bottom: 42px;
     justify-content: space-between;
   }
 }
 
 .form__fieldset {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
-  padding: 0 0 20px;/*пусть пока будет*/
+  padding: 0 0 23px;
   border: 0;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    margin-left: 70px;
-    margin-right: 70px;
-    padding-bottom: 70px;/*пока так*/
+    margin-left: 9%;
+    margin-right: 8.7%;
+    padding-bottom: 27px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 569px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 0;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -39,25 +38,54 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 11px;
-    padding-top: 10px;
+    padding-top: 8px;
+  }
+}
+
+.form__characteristic {
+  @media (min-width: $desktop-width) {
+    margin-left: 19.4%;
+  }
+}
+
+.form__characteristic-item:nth-of-type(2) {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11px;
   }
 }
 
 /* Вид программы */
 
-.form__program {
+.form__program-wrapper {
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
 
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.form__program {
+  padding-bottom: 18px;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-bottom: 22px;
     border: 1px solid $border-input;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 196px;
     margin-top: 10px;
-    padding-bottom: 10px;
+    margin-right: 110px;
+    padding-bottom: 0;
   }
 }
 
@@ -70,7 +98,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 33px 0 0 86px;
+    padding: 29px 0 0 86px;
   }
 }
 
@@ -83,7 +111,7 @@
 }
 
 .form__program-item:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 24px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 23px;
@@ -96,7 +124,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: -3px;
+    top: -4px;
     left: -46px;
     width: 30px;
     height: 30px;
@@ -109,8 +137,8 @@
     &::before {
       position: absolute;
       content: "";
-      top: -3px;
-      left: -66px;
+      top: -7px;
+      left: -62px;
       width: 40px;
       height: 40px;
       background-color: $basic-white;
@@ -128,17 +156,17 @@
   line-height: 26px;
   color: $basic-black;
 
-  &::after { /* зеленая полоска справа */
+  &::after {
     position: absolute;
     content: "";
+    left: 100%;
     top: 15px;
-    right: -20px;
+    width: 100vw;
     height: 3px;
-    background-color: $basic-green;
+    background-color: #68b738;
 
     @media (min-width: $tablet-width) {
       top: 21px;
-      left: 554px;
     }
   }
 
@@ -146,67 +174,70 @@
     font-size: 36px;
     line-height: 36px;
 
-    &::before { /* зеленая полоска слева */
+    &::before {
       position: absolute;
       content: "";
       top: 21px;
-      left: -70px;
+      right: 100%;
+      width: 100vw;
       height: 3px;
       background-color: $basic-green;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &::before { /* зеленая полоска слева */
+    &::before {
       left: -110px;
     }
   }
 }
 
+/* Контактная инфа */
+
+@media (min-width: $desktop-width) {
+  .form__contacts-wrapper {
+    margin-left: 7.6%;
+    margin-right: 7.6%;
+  }
+}
+
 .form__contacts {
   margin-top: 26px;
+  padding-bottom: 25px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-top: 75px;
-    padding-bottom: 65px;
+    margin-top: 40px;
+    padding-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
-    margin-top: 69px;
-    padding-bottom: 67px;
+    min-width: 1220px;
+    margin-top: 32px;
+    padding-bottom: 59px;
   }
 }
 
 .form__contacts-legend {
+  max-width: 187px;
   margin-bottom: 22px;
-
-  &::after {
-    width: 99px;
-  }
+  padding: 0;
+  padding-right: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
-
-    &::after {
-      width: 145px;
-    }
+    max-width: 512px;
+    margin-bottom: 68px;
+    padding-right: 42px;
 
     &::before {
-      width: 30px;
+      margin-right: 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
-
-    &::after {
-      width: 776px;
-    }
-
     &::before {
       width: 70px;
     }
@@ -219,56 +250,69 @@
 
   @media (min-width: $desktop-width) {
     min-width: 569px;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
 }
 
 .form__icon {
   position: absolute;
-  top: 30px;
-  right: 16px;
+
+  &--email {
+    top: 29px;
+    right: 5.3%;
+  }
+
+  &--phone {
+    top: 27px;
+    right: 4.6%;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 25px;
+    right: 2.7%;
+  }
 }
 
 /* Комментарий */
 
+@media (min-width: $desktop-width) {
+  .form__comment-wrapper {
+    margin-left: 7.6%;
+    margin-right: 7.6%;
+  }
+}
+
 .form__comment {
+  padding-bottom: 21px;
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 65px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;/* вроде дичь какая-то */
+    min-width: 1220px;
   }
 }
 
 .form__comment-legend {
-  width: 280px;
-  margin-bottom: 37px;
-
-  &::after {
-    width: 158px;
-  }
+  max-width: 121px;
+  margin-bottom: 38px;
+  padding-right: 22px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
-
-    &::after {
-      left: 218px;
-      width: 478px;
-    }
+    max-width: 182px;
+    margin-bottom: 75px;
+    padding: 0;
+    padding-right: 40px;
 
     &::before {
-      width: 30px;
+      margin-right: 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 76px;
-
-    &::after {
-      left: 218px;
-      width: 1108px;
-    }
 
     &::before {
       width: 70px;
@@ -276,56 +320,43 @@
   }
 }
 
-.form__comment-input {
-  width: 100%;
-  height: 150px;
-  padding-top: 9px;
-  padding-right: 12px;
-  padding-bottom: 9px;
-  box-sizing: border-box;
+/* Дополнительно */
 
-  @media (min-width: $desktop-width) {
-    height: 174px;
+@media (min-width: $desktop-width) {
+  .form__complementary-wrapper {
+    margin-left: 7.6%;
+    margin-right: 7.6%;
   }
 }
 
-/* Дополнительно */
-
 .form__complementary {
+  padding-bottom: 27px;
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
-    padding-bottom: 44px;
+    padding-bottom: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;/* тоже дичь */
-    padding-bottom: 61px;
+    min-width: 1220px;
+    padding-bottom: 25px;
   }
 }
 
 .form__complementary-legend {
-  width: 280px;
-
-  &::after {
-    width: 136px;
-  }
+  max-width: 141px;
+  padding-right: 23px;
 
   @media (min-width: $tablet-width) {
-    &::after {
-      left: 250px;
-      width: 446px;
-    }
+    max-width: 211px;
+    padding-right: 40px;
 
     &::before {
-      width: 30px;
+      margin-right: 40px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    &::after {
-      left: 250px;
-      width: 1078px;
-    }
-
     &::before {
       width: 70px;
     }
@@ -334,19 +365,17 @@
 
 .form__complementary-list {
   @include list-style;
-  padding: 39px 0 21px 46px;
+  padding: 39px 0 14px 16.9%;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 57px;
-    padding-bottom: 10px;
-    padding-left: 59px;
+    padding: 62px 4.6% 10px 9.5%;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 69px;
+    padding-left: 4.9%;
     padding-bottom: 0;
   }
 }
@@ -358,13 +387,29 @@
 }
 
 .form__complementary-item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .form__complementary-item:nth-child(1),
 .form__complementary-item:nth-child(2) {
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}
+
+.form__complementary-item:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
+}
+
+.form__complementary-item:last-child {
+  @media (min-width: $desktop-width) {
+    margin-right: -70px;
   }
 }
 
@@ -377,7 +422,7 @@
     position: absolute;
     content: "";
     top: -3px;
-    left: -46px;
+    left: -47px;
     width: 30px;
     height: 30px;
     background-color: $basic-white;
@@ -386,6 +431,7 @@
 
   @media (min-width: $tablet-width) {
     &::before {
+      top: -18%;
       left: -59px;
       width: 40px;
       height: 40px;
@@ -395,27 +441,60 @@
 
 .form__label {
   margin-top: 13px;
-  margin-right: 13px;/*на глаз*/
+  margin-right: 4.7%;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    margin-right: 2.7%;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
+.form__label[for="weight"] {/*внутренний перфекционист негодует*/
+  margin-right: 6%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 3.1%;
+  }
+}
+
+.form__label[for="email"] {
+  margin-right: 4%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 3.2%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 3.9%;
+  }
+}
+
+.form__label[for="tel"] {
+  margin-right: 3.3%;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 2.3%;
+  }
+}
+
 .form__input {
   min-height: 45px;
-  padding-left: 16px;
-  padding-top: 3px;
+  padding-left: 5.2%;
+  padding-top: 5px;
+  box-sizing: border-box;
   border: 1px solid $border-input;
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    padding-left: 20px;
+    min-height: 52px;
+    padding-left: 3.2%;
     padding-top: 8px;
+    letter-spacing: 1px;
   }
 
   &::placeholder {
@@ -431,49 +510,71 @@
   }
 }
 
+.form__comment-input {
+  width: 100%;
+  height: 150px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+    padding-top: 10px;
+    padding-left: 3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 174px;
+    padding-left: 1.5%;
+  }
+}
+
+.form__input[type="tel"] {
+  padding-top: 8px;
+}
+
 /* кнопка */
 
 .form__button-wrapper {
-  width: 280px;
+  width: 87.5%;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     width: auto;
-    margin-bottom: 30px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-bottom: 41px;
+    margin-left: 9.2%;
+    margin-right: 9%;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    margin-left: 40px;
+    margin-left: 7.6%;
+    margin-right: 7.6%;
     margin-bottom: 40px;
   }
 }
 
-.form__button { /* андрей, сделай наконец-то миксин */
-  @include fonts(16px, 400, "Oswald");
-  display: block;
+.form__button { /* андрей сделал миксин :D */
+  @include button;
   width: 100%;
-  margin-bottom: 21px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  line-height: 20px;
-  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  font-size: 16px;
   color: $basic-white;
   background-color: $basic-green;
-  border: none;
 
   @media (min-width: $tablet-width) {
-    width: 282px;
+    width: 45%;
     margin-bottom: 0;
-    padding: 13px 45px;
+    padding: 2.5% 7.7%;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 568px;
+    padding: 1.3% 7.7%;
   }
 }
 
@@ -487,13 +588,16 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
-    padding-top: 10px;/*на глаз*/
+    margin-left: 9.7%;
+    padding-top: 16px;
     font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
     width: 470px;
+    margin-left: 6.8%;
+    padding-top: 18px;
     text-align: left;
   }
 }

@@ -146,7 +146,7 @@
 
       @media (min-width: $desktop-width) {
         bottom: -6px;
-        background-color: $basic-white;
+        /*background-color: $basic-white;*/
       }
     }
   }
@@ -160,6 +160,6 @@
   color: $basic-black;
 
   @media (min-width: $desktop-width) {
-    color: $basic-white;
+    /*color: $basic-white; придумать как сделать белые ссылки и подчеркивание только на индексе*/
   }
 }

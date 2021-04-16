@@ -8,21 +8,14 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/header/logo-mob.svg" width="190" height="38" alt="Логотип сайта Cat Energy">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/header/logo-mob.svg" width="190" height="38" alt="Логотип сайта Cat Energy">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
-          <!--<span class="visually-hidden">Открыть меню</span>
-          <svg class="menu-open" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-          </svg>
-          <svg class="menu-close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
-            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
-          </svg>-->
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -126,7 +119,7 @@
           <div class="form__comment-wrapper">
             <fieldset class="form__comment form__fieldset">
               <legend class="form__legend form__comment-legend">Комментарий</legend>
-              <textarea class="form__input form__comment-input" name="comment" cols="30" rows="20" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__input form__comment-input" name="comment" cols="30" rows="10" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
           </div>
 
@@ -171,13 +164,12 @@
         <div class="contacts__wrapper">
           <div class="contacts__info">
             <h2 class="visually-hidden">Контакты</h2>
-            <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <b class="contacts__title">Приглашаем <span class="carry">к сотрудничеству</span> дилеров!</b>
+            <p class="contacts__text">ул. Большая <span class="carry">Конюшенная, д. 19/8 </span> Санкт-Петербург</p>
           </div>
 
           <div class="contacts__map-wrapper">
-            <!--будет iframe-->
-            <img class="contacts__map" src="img/main/location.png" width="320" height="362" alt="Заменить на айфрейм">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1618313436235!5m2!1sru!2sua" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </section>
@@ -236,5 +228,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>
