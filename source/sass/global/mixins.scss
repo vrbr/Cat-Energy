@@ -9,3 +9,12 @@
   font-size: $size;
   font-weight: $weight;
 }
+
+@mixin button {
+  display: block;
+  font-family: "Oswald", "Arial", sans-serif;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+}

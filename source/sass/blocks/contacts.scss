@@ -7,7 +7,7 @@
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
-  padding: 0 6%;
+  padding: 0 6.25%;
   outline: 2px solid rgba(200, 100, 100, 0.8);
   outline-offset: -3px;
 
@@ -46,7 +46,7 @@
 
 .contacts__title {
   @include fonts(16px, 400, "Oswald");
-  line-height: 20px;
+  line-height: 21px;
   text-transform: uppercase;
   color: $special-more;
   outline: 2px solid rgba(195, 247, 54, 0.8);
@@ -85,6 +85,18 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+  }
+}
+
+.contacts__title .carry,
+.contacts__text .carry {
+  white-space: nowrap;
+}
+
+.contacts__text .carry {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 22px;
   }
 }
 
