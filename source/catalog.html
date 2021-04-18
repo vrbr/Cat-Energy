@@ -9,21 +9,14 @@
 
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/header/logo-mob.svg" width="190" height="38" alt="Логотип сайта Cat Energy">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/header/logo-mob.svg" width="190" height="38" alt="Логотип сайта Cat Energy">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
-          <!--<svg class="menu-open" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-          </svg>
-          <svg class="menu-close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
-            <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
-          </svg>-->
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -71,7 +64,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">700 p.</td>
+                <td class="information__description">700 Р.</td>
               </tr>
 
             </table>
@@ -97,7 +90,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">1000 p.</td>
+                <td class="information__description">1000 Р.</td>
               </tr>
 
             </table>
@@ -123,7 +116,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">700 p.</td>
+                <td class="information__description">700 Р.</td>
               </tr>
 
             </table>
@@ -149,7 +142,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">1000 p.</td>
+                <td class="information__description">1000 Р.</td>
               </tr>
 
             </table>
@@ -175,7 +168,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">400 p.</td>
+                <td class="information__description">400 Р.</td>
               </tr>
 
             </table>
@@ -201,7 +194,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">700 p.</td>
+                <td class="information__description">700 Р.</td>
               </tr>
 
             </table>
@@ -227,7 +220,7 @@
               </tr>
               <tr class="information__line">
                 <td class="information__name">Цена</td>
-                <td class="information__description">500 p.</td>
+                <td class="information__description">500 Р.</td>
               </tr>
 
             </table>
@@ -257,7 +250,7 @@
             <table class="goods__table">
               <tr class="goods__line">
                 <td class="goods__name">1 упаковка (100 г)</td>
-                <td class="goods__description">200 p.</td>
+                <td class="goods__description">200 Р.</td>
               </tr>
             </table>
             <a class="additionally__table-link button">Заказать</a>
@@ -268,7 +261,7 @@
             <table class="goods__table">
               <tr class="goods__line">
                 <td class="goods__name">5 литров</td>
-                <td class="goods__description">50 р.</td>
+                <td class="goods__description">50 Р.</td>
               </tr>
             </table>
             <a class="additionally__table-link button">Заказать</a>
@@ -279,7 +272,7 @@
             <table class="goods__table">
               <tr class="goods__line">
                 <td class="goods__name">1 литр</td>
-                <td class="goods__description">100 р.</td>
+                <td class="goods__description">100 Р.</td>
               </tr>
             </table>
             <a class="additionally__table-link button">Заказать</a>
@@ -290,7 +283,7 @@
             <table class="goods__table">
               <tr class="goods__line">
                 <td class="goods__name">1 упаковка (30 г)</td>
-                <td class="goods__description">300 р.</td>
+                <td class="goods__description">300 Р.</td>
               </tr>
             </table>
             <a class="additionally__table-link button">Заказать</a>
@@ -305,7 +298,7 @@
               <path d="M54.2313 21.3416L53.071 19.2113C54.3477 18.524 55.2782 17.385 55.6926 16.0038C56.1063 14.622 55.9534 13.1626 55.2617 11.8952C54.5719 10.6266 53.4263 9.70258 52.0363 9.29142C50.6457 8.88026 49.1783 9.03164 47.9023 9.71771C42.9201 12.399 39.9871 20.538 39.9579 20.6204L37.6587 19.8168C37.7891 19.4469 40.928 10.7162 46.7421 7.58744C48.5897 6.59315 50.7182 6.37394 52.7316 6.96979C54.7468 7.56503 56.4061 8.90508 57.4061 10.7417C58.4073 12.5777 58.6285 14.6916 58.0289 16.6941C57.4287 18.696 56.0801 20.3461 54.2313 21.3416Z" fill="white"/>
               <path d="M61.9496 50.9317H16.0929C15.4201 50.9317 14.8741 50.3891 14.8741 49.7206C14.8741 49.0521 15.4201 48.5095 16.0929 48.5095H61.9496C62.6223 48.5095 63.1683 49.0521 63.1683 49.7206C63.1683 50.3891 62.6229 50.9317 61.9496 50.9317Z" fill="white"/>
             </svg>
-            <p class="additionally__text">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="additionally__text">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
           </div>
 
           </div>
@@ -316,12 +309,12 @@
         <div class="contacts__wrapper">
           <div class="contacts__info">
             <h2 class="visually-hidden">Контакты</h2>
-            <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <b class="contacts__title">Приглашаем <span class="carry">к сотрудничеству</span> дилеров!</b>
+            <p class="contacts__text">ул. Большая <span class="carry">Конюшенная, д. 19/8 </span> Санкт-Петербург</p>
           </div>
 
           <div class="contacts__map-wrapper">
-            <img class="contacts__map" src="img/main/location.png" width="320" height="362" alt="Заменить на айфрейм">
+            <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1618313436235!5m2!1sru!2sua" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
       </section>
@@ -380,5 +373,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
+
   </body>
 </html>

@@ -25,15 +25,17 @@
   margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto 56px;
-    padding-top: 41px;
+    width: 630px;
+    margin-bottom: 56px;
+    margin-left: 3.9%;
+    padding-top: 56px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    margin-left: 7.6%;
+    margin-right: 7.6%;
   }
 }
 

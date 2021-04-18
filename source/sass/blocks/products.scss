@@ -2,12 +2,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
+    margin: 0 auto;
     padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1300px;
     margin: 0 auto;
+    padding-top: 105px;
   }
 }
 
@@ -15,21 +18,23 @@
 
 .products__item {
   margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 21px;
+  padding-bottom: 24px;
   text-align: center;
   border-top: 1px solid $border-catalog;
   border-bottom: 1px solid $border-catalog;
 
   @media (min-width: $tablet-width) {
     width: 320px;/* 4px на бордер*/
-    padding-top: 52px;
+    margin-top: 81px;
+    padding-top: 104px;
     border: 2px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    margin-bottom: 63px;
+    width: 241px;/* 4px на бордер*/
+    margin-top: 0;
+    padding-top: 71px;
   }
 }
 
@@ -48,6 +53,10 @@
     margin-bottom: 23px;
     font-size: 20px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
   }
 }
 
@@ -69,18 +78,15 @@
 /* кнопка */
 
 .products__link-more {
-  @include fonts(16px, 400, "Oswald");
-  display: block;
-  width: 280px;
+  @include button;
+  font-size: 16px;
+  width: 87.75%;
   margin: 0 auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 20px;
-  text-transform: uppercase;
   text-align: center;
   color: $special-dark-grey;
   background-color: $basic-grey;
-  border: none;
 
   @media (min-width: $tablet-width) {
     width: 249px;
