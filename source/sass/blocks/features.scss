@@ -4,12 +4,9 @@
   padding-top: 23px;
   padding-bottom: 48px;
 
-  outline: 2px solid rgba(0, 100, 100, 0.8);
-  outline-offset: -3px;
-
   @media (min-width: $tablet-width) {
     margin: 0 3.9%;
-    padding-top: 35px;
+    padding-top: 43px;
     padding-bottom: 27px;
   }
 
@@ -52,8 +49,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -62,8 +61,6 @@
 .features__item {
   position: relative;
   margin-bottom: 26px;
-  outline: 2px solid rgba(200, 100, 100, 0.8);
-  outline-offset: -3px;
 
   &::before {
     position: absolute;
@@ -74,19 +71,19 @@
   }
 
   &--leaf::before {
-    background-image: url("../img/main/leaf.png");
+    background-image: url("../img/main/leaf.svg");
   }
 
   &--powder::before {
-    background-image: url("../img/main/powder.png");
+    background-image: url("../img/main/powder.svg");
   }
 
   &--dining::before {
-    background-image: url("../img/main/dining.png");
+    background-image: url("../img/main/dining.svg");
   }
 
   &--clock::before {
-    background-image: url("../img/main/clock.png");
+    background-image: url("../img/main/clock.svg");
   }
 
   &:last-child {
@@ -97,7 +94,7 @@
     width: 100%;
     margin-bottom: 0;
     padding-top: 151px;
-    padding-bottom: 100px;
+    padding-bottom: 76px;
 
     &::before {
       position: absolute;
@@ -122,39 +119,51 @@
     }
 
     &--leaf::before {/*не нравится дублирование свгшек*/
-      background-image: url("../img/main/leaf.png");
+      background-image: url("../img/main/leaf.svg");
     }
 
     &--leaf::after {
       content: "1";
-      right: 15px;
+      left: 118px;
     }
 
     &--powder::before {
-      background-image: url("../img/main/powder.png");
+      background-image: url("../img/main/powder.svg");
     }
 
     &--powder::after {
       content: "2";
-      right: 0;
+      right: 80px;
     }
 
     &--dining::before {
-      background-image: url("../img/main/dining.png");
+      background-image: url("../img/main/dining.svg");
     }
 
     &--dining::after {
       content: "3";
-      right: -2px;
+      left: 113px;
     }
 
     &--clock::before {
-      background-image: url("../img/main/clock.png");
+      background-image: url("../img/main/clock.svg");
     }
 
     &--clock::after {
       content: "4";
-      right: -4px;
+      right: 76px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+
+    &--powder::after {
+      right: 0;
+    }
+
+    &--clock::after {
+      right: -3px;
     }
   }
 }
@@ -168,9 +177,14 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    width: 250px;
     margin: 0;
     font-size: 16px;
     line-height: 24px;
     z-index: 2;
   }
+}
+
+.features__text .carry {
+  white-space: nowrap;
 }
