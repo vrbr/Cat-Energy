@@ -7,7 +7,7 @@
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 63px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,8 +23,6 @@
   justify-content: space-between;
   margin-bottom: 26px;
   padding: 0 6.25%;
-  outline: 2px solid rgba(200, 100, 100, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     padding: 0 9.3% 33px;
@@ -35,7 +33,7 @@
     top: 92px;
     left: 7.5%;
     width: 570px;
-    padding: 66px 82px 60px 77px;
+    padding: 66px 82px 55px 77px;
     box-sizing: border-box;
     background-color: $basic-white;
     z-index: 1;
@@ -46,11 +44,10 @@
 
 .contacts__title {
   @include fonts(16px, 400, "Oswald");
-  line-height: 21px;
+  margin-left: -1px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $special-more;
-  outline: 2px solid rgba(195, 247, 54, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 180px;
@@ -74,8 +71,6 @@
   @include fonts(14px, 400, "Arial");
   margin: 0;
   line-height: 20px;
-  outline: 2px solid rgba(180, 110, 212, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 160px;
@@ -104,14 +99,36 @@
 
 .contacts__map-wrapper {
   position: relative;
-  background: url("../img/main/location.png") no-repeat;
+  width: 320px;
+  height: 362px;
+  background: url("../img/main/location@1x.png") no-repeat;
   background-color: $basic-grey;
   background-position: center 0;
 
-  /*@media (min-width: $tablet-width) {}
-  поменять карту*/
-  /*@media (min-width: $desktop-width) {}
-  поменять карту*/
+  @media (min-resolution: 2dppx) {
+    background: url("../img/main/location@2x.png") no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    background: url("../img/main/location-tab@1x.png") no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/main/location-tab@2x.png") no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    background: url("../img/main/location-desk@1x.png") no-repeat;
+    background-position: center 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/main/location-desk@2x.png") no-repeat;
+    }
+  }
 
   &::before {
     position: absolute;

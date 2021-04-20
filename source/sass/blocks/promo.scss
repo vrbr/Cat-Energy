@@ -1,20 +1,30 @@
 .promo {
   @media (min-width: $desktop-width) {
-    margin-top: -121px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 694px), url("../img/main/promo-background-desk.jpg");
+    margin-top: -132px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 694px), url("../img/main/promo-background-desk@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 694px;
     background-position: right 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 694px), url("../img/main/promo-background-desk@2x.jpg");
+      background-size: 720px 694px;
+    }
   }
 }
 
 .promo__wrapper {
   padding-top: 27px;
   color: $basic-white;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 320px, rgba(104, 183, 56, 0.85) 302px), url("../img/main/promo-background-mob.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 320px, rgba(104, 183, 56, 0.85) 302px), url("../img/main/promo-background-mob@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 302px;
   background-position: center 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 320px, rgba(104, 183, 56, 0.85) 302px), url("../img/main/promo-background-mob@2x.jpg");
+    background-size: 320px 302px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 707px;
@@ -82,16 +92,17 @@
   margin: 0 auto 2px;
 
   @media (min-width: $tablet-width) {
+    width: 709px;
     height: 609px;
-    margin: -77px 0 0 -88px;
+    margin: -83px 0 0 -88px;
     order: 4;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    margin-left: 450px;
-    margin-top: -200px;/*на глаз*/
+    margin-left: 369px;
+    margin-top: -367px;
   }
 }
 

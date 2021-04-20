@@ -21,9 +21,9 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    padding: 14px 0 0 7.64%;
+    padding: 37px 0 0 7.64%;
     background-color: transparent;
-    background-image: linear-gradient(to bottom, $basic-white 0, $basic-white 192px, $basic-grey 192px, $basic-grey 100%);
+    background-image: linear-gradient(to bottom, $basic-white 0, $basic-white 216px, $basic-grey 192px, $basic-grey 100%);
     border: none;
   }
 }
@@ -72,8 +72,6 @@
   margin: 0 6% 25px;
   width: 87.5%;
   line-height: 18px;
-  outline: 2px solid rgba(200, 150, 120, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 98%;
@@ -109,7 +107,7 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
-  margin: 0 6.25% 34px;
+  margin: 0 auto 34px;
 
   @media (min-width: $tablet-width) {
     width: 366px;
@@ -132,6 +130,7 @@
   line-height: 12px;
   text-align: center;
   text-transform: lowercase;
+  background-color: $basic-grey;
 
   &:nth-of-type(1) {
     left: 6%;
@@ -146,6 +145,7 @@
     width: 142px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $basic-white;
 
     &:nth-of-type(1) {
       left: 1%;
@@ -154,6 +154,10 @@
     &:nth-of-type(2) {
       right: 1%;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
 
@@ -169,7 +173,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
-  border: 1px solid $special-grey;/*как частично убрать нижнюю рамку*/
+  border: 1px solid $special-grey;
   border-radius: 3px;
 
   @media (min-width: $tablet-width) {
@@ -202,8 +206,17 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;/*чета не работает*/
+    justify-content: space-between;
     width: 327px;
+  }
+}
+
+.example__price .carry {
+  display: block;
+  padding-top: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -220,6 +233,6 @@
     margin-top: 178px;
     padding-right: 110px;
     padding-bottom: 0;
-    background-image: linear-gradient(to right, $basic-grey 0, $basic-grey 422px, $special-cats 422px, $special-cats 100%);
+    background-image: linear-gradient(to right, $basic-grey 0, $basic-grey 426px, $special-cats 426px, $special-cats 100%);
   }
 }
