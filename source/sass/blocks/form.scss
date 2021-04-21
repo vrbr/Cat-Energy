@@ -299,6 +299,7 @@
   max-width: 121px;
   margin-bottom: 38px;
   padding-right: 22px;
+  padding-left: 1px;
 
   @media (min-width: $tablet-width) {
     max-width: 182px;
@@ -330,7 +331,7 @@
 }
 
 .form__complementary {
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -346,6 +347,7 @@
 .form__complementary-legend {
   max-width: 141px;
   padding-right: 23px;
+  padding-left: 1px;
 
   @media (min-width: $tablet-width) {
     max-width: 211px;
