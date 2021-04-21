@@ -99,7 +99,7 @@
 
 .contacts__map-wrapper {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   height: 362px;
   background: url("../img/main/location@1x.png") no-repeat;
   background-color: $basic-grey;
@@ -110,7 +110,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
     height: 400px;
     background: url("../img/main/location-tab@1x.png") no-repeat;
     background-position: center 0;
@@ -121,7 +121,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    min-width: 1440px;
     background: url("../img/main/location-desk@1x.png") no-repeat;
     background-position: center 0;
 
@@ -134,16 +134,32 @@
     position: absolute;
     content: "";
     top: 139px;
-    left: 50%;
+    left: 40%;
     width: 57px;
     height: 53px;
-    background: url("../img/main/map-pin.png") no-repeat;
+    background: url("../img/main/map-pin-mob@1x.png") no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/main/map-pin-mob@2x.png") no-repeat;
+      background-size: 57px 53px;
+    }
 
     @media (min-width: $tablet-width) {
       width: 113px;
       height: 106px;
-      left: 50%;
-      top: 146px;
+      left: 40%;
+      top: 119px;
+      background: url("../img/main/map-pin-tab@1x.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/main/map-pin-tab@2x.png") no-repeat;
+        background-size: 113px 106px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 45%;
+      top: 115px;
     }
   }
 }
