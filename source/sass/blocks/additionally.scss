@@ -9,15 +9,15 @@
   padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 46px;
-    padding-bottom: 76px;
+    padding-top: 50px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
     margin-left: 7.7%;
     margin-right: 7.8%;
-    padding-top: 71px;
+    padding-top: 76px;
     padding-bottom: 88px;
   }
 }
@@ -122,7 +122,7 @@
   border-bottom: 1px solid $border-goods;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 69px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,27 +157,47 @@
 
 .additionally__bonus {
   width: 100%;
-  margin-top: 39px;
+  margin: 40px auto 0;
   padding-top: 57px;
-  padding-bottom: 42px;
+  padding-bottom: 41px;
   text-align: center;
-  background: url("../img/main/cat-in-a-case.jpg") no-repeat;
+  background: url("../img/main/cat-in-a-case-mob@1x.jpg") no-repeat;
   background-color: $basic-green;
-  background-position: 0 0;
-  background-size: 280px 289px;/*собрать в одну кучу бэки*/
+  background-position: top center;
+  background-size: 280px 289px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main/cat-in-a-case-mob@2x.jpg");
+    background-size: 280px 289px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 708px;
     margin: 0 auto;
     padding-top: 57px;
     padding-bottom: 13px;
+    background: url("../img/main/cat-in-a-case-tab@1x.jpg") no-repeat;
+    background-color: $basic-green;
+    background-position: top center;
+    background-size: 708px 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/cat-in-a-case-tab@2x.jpg");
+      background-size: 708px 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: block;
-    width: 245px;
-    margin: 0;
+    background: url("../img/main/cat-in-a-case-desk@1x.jpg") no-repeat;
+    background-color: $basic-green;
+    background-position: top center;
+    background-size: 245px 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main/cat-in-a-case-desk@2x.jpg");
+      background-size: 245px 289px;
+    }
   }
 }
 
@@ -225,7 +245,7 @@
 @media (min-width: $desktop-width) {
   .additionally__goods-preview {
     display: grid;
-    grid-template-columns: 895px 245px;
+    grid-template-columns: 894px 245px;
     grid-template-rows: 72px 72px 72px 72px;
     grid-gap: 0 80px;
     width: 1220px;

@@ -8,20 +8,18 @@
   margin-right: 6.25%;
   padding-bottom: 25px;
   border-top: 1px solid $border-catalog;
-  outline: 2px solid rgba(200, 150, 50, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    margin: 74px 30px 57px;
-    padding-bottom: 45px;
+    margin: 74px 30px 66px;
+    padding-bottom: 40px;
     background-color: $basic-grey;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin: 0 40px 133px;
+    margin: 0 40px 143px;
 
     &:nth-child(6),
     &:nth-child(7) {
@@ -41,10 +39,45 @@
 .products-item__preview {
   width: 138px;
   height: 144px;
-  outline: 2px solid rgba(200, 100, 100, 0.8);
-  outline-offset: -3px;
+  box-sizing: border-box;
+
+  &--first-item {
+    padding-top: 33px;
+    padding-left: 36px;
+  }
+
+  &--second-item {
+    padding-top: 30px;
+    padding-left: 28px;
+  }
+
+  &--third-item {
+    padding-top: 46px;
+    padding-left: 36px;
+  }
+
+  &--fourth-item {
+    padding-top: 30px;
+    padding-left: 28px;
+  }
+
+  &--fifth-item {
+    padding-top: 49px;
+    padding-left: 36px;
+  }
+
+  &--sixth-item {
+    padding-top: 31px;
+    padding-left: 28px;
+  }
+
+  &--seventh-item {
+    padding-top: 43px;
+    padding-left: 34px;
+  }
 
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 324px;
     z-index: 1;
   }
@@ -54,24 +87,16 @@
   }
 }
 
-.products__image {
-  /*вставить что-то мелкое на фон*/
-  outline: 2px solid rgba(200, 150, 50, 0.8);
-  outline-offset: -3px;
-}
-
 /* блок с описанием */
 
 .products-item__information {
   width: 142px;
   padding-top: 19px;
-  outline: 2px solid rgba(0, 100, 100, 0.8);
-  outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-top: -140px;
-    padding: 161px 12% 25px 12%;
+    padding: 157px 12% 25px 12%;
   }
 
   @media (min-width: $desktop-width) {

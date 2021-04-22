@@ -50,6 +50,8 @@
 .goods__name,
 .goods__description {
   width: 50%;
+  padding-left: 0;
+  padding-right: 0;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -61,9 +63,19 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 44px;
+
+    &--water {
+      padding-right: 55px;
+    }
   }
 }
 
 .goods__description {
   text-align: right;
+
+  @media (min-width: $desktop-width) {
+    &--water {
+      padding-right: 10px;
+    }
+  }
 }

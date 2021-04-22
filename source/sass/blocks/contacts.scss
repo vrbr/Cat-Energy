@@ -85,7 +85,13 @@
 
 .contacts__title .carry,
 .contacts__text .carry {
+  display: block;
+  padding-top: 2px;
   white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .contacts__text .carry {
@@ -147,8 +153,8 @@
     @media (min-width: $tablet-width) {
       width: 113px;
       height: 106px;
-      left: 40%;
-      top: 119px;
+      left: 43.3%;
+      top: 144px;
       background: url("../img/main/map-pin-tab@1x.png") no-repeat;
 
       @media (min-resolution: 2dppx) {
