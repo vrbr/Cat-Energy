@@ -18,23 +18,28 @@
 
 .products__item {
   margin: 0 auto;
-  padding-top: 21px;
+  padding-top: 25px;
   padding-bottom: 24px;
   text-align: center;
   border-top: 1px solid $border-catalog;
   border-bottom: 1px solid $border-catalog;
 
   @media (min-width: $tablet-width) {
-    width: 320px;/* 4px на бордер*/
-    margin-top: 81px;
-    padding-top: 104px;
+    width: 320px;
+    margin-top: 77px;
+    padding-top: 51px;
     border: 2px solid $basic-grey;
+
+    &--more svg {
+      width: 60px;
+      height: 60px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 241px;/* 4px на бордер*/
+    width: 241px;
     margin-top: 0;
-    padding-top: 71px;
+    padding-top: 51px;
   }
 }
 
@@ -43,7 +48,7 @@
 .products__title-more {
   @include fonts(16px, 400, "Oswald");
   margin: 0 auto 8px;
-  padding-top: 23px;
+  padding-top: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: $special-more;
@@ -51,12 +56,9 @@
   @media (min-width: $tablet-width) {
     width: 150px;
     margin-bottom: 23px;
+    padding-top: 46px;
     font-size: 20px;
     line-height: 22px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 60px;
   }
 }
 
@@ -72,6 +74,41 @@
     margin-bottom: 87px;
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+/* картинка */
+
+.products__image {
+  object-fit: contain;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -74px;
+    left: 78px;
+    width: 168px;
+    height: 206px;
+
+    &--small {
+      top: -45px;
+      left: 82px;
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 40px;
+    top: -80px;
+    width: 172px;
+    height: 200px;
+
+    &--small {
+      left: 45px;
+      top: -52px;
+      width: 161px;
+      height: 172px;
+    }
   }
 }
 
