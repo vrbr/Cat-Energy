@@ -125,6 +125,14 @@
   padding-bottom: 23px;
   border-bottom: 1px solid $border-logo;
 
+  &:hover:not(.main-nav__item--current) {
+    opacity: 0.6;
+  }
+
+  &:active:not(.main-nav__item--current) {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     border: 0;

@@ -42,6 +42,16 @@
   height: 38px;
   margin-left: 6.25%;
   padding-top: 13px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;

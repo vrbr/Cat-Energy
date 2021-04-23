@@ -120,6 +120,15 @@
   color: $basic-white;
   background-color: $basic-green;
 
+  &:hover,
+  &:focus {
+    background-color: $basic-dark-green;
+  }
+
+  &:active {
+    color: $button-active;
+  }
+
   @media (min-width: $tablet-width) {
     width: 244px;
     margin: 0;
