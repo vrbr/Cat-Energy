@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0 5px 0 38px;
+    padding: 0 5px 0 30px;
     border: none;
   }
 }
@@ -26,8 +26,66 @@
 
 .social__item--vkontakte {
   margin-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
 }
 
 .social__item--instagram {
-  margin-right: 33px;
+  margin-right: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+}
+
+/* ссылки */
+
+.social__link-vkontakte {
+  fill: $special-medium-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social__link-instagram {
+  fill: $special-medium-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social__link-facebook {
+  fill: none;
+  stroke: $special-medium-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 27px;
+  }
+}
+
+/* действие */
+
+.social__link:hover .social__link-facebook,
+.social__link:focus .social__link-facebook {
+  stroke: $basic-green;
+}
+
+.social__link:hover .social__link-vkontakte,
+.social__link:hover .social__link-instagram,
+.social__link:focus .social__link-vkontakte,
+.social__link:focus .social__link-instagram {
+  fill: $basic-green;
+}
+
+.social__link:active .social__link-vkontakte,
+.social__link:active .social__link-instagram,
+.social__link:active .social__link-facebook {
+  opacity: 0.3;
 }
