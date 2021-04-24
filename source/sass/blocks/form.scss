@@ -110,6 +110,10 @@
   }
 }
 
+.form__program-list input:disabled ~ .form__program-label {
+  opacity: 0.3;
+}
+
 .form__program-item:not(:last-child) {
   margin-bottom: 24px;
 
@@ -382,6 +386,10 @@
   }
 }
 
+.form__complementary-list input:disabled ~ .form__complementary-label {
+  opacity: 0.3;
+}
+
 .form__complementary-item {
   @media (min-width: $tablet-width) {
     width: 200px;
@@ -490,7 +498,16 @@
   padding-top: 5px;
   box-sizing: border-box;
   border: 1px solid $border-input;
+  outline: none;
   flex-grow: 1;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 1px solid $special-dark-grey;
+  }/*цвет при error на js*/
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
