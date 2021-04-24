@@ -14,7 +14,7 @@
   position: relative;
   width: 320px;
   height: 240px;
-  margin: 0 auto 2px;
+  margin: 0 auto 19px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -58,6 +58,7 @@
 .cats__item-after {
   top: 0;
   left: 0;
+  padding-left: 37px;
 
   @media (min-width: $tablet-width) {
     top: 0;
@@ -76,6 +77,10 @@
   }
 }
 
+.cats__item-after img {
+  width: 251px;
+}
+
 .cats__item:nth-child(1) img {
   @media (min-width: $tablet-width) {
     top: 0;
@@ -91,13 +96,13 @@
 .cats__item:nth-child(2) img {
   @media (min-width: $tablet-width) {
     top: 0;
-    right: -7px;
+    right: 29px;
     min-width: 690px;
   }
 
   @media (min-width: $desktop-width) {
     top: 4px;
-    right: 24px;
+    right: 57px;
   }
 }
 
