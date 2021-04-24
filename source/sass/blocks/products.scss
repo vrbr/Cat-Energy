@@ -125,6 +125,15 @@
   color: $special-dark-grey;
   background-color: $basic-grey;
 
+  &:hover,
+  &:focus {
+    background-color: $border-catalog;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 249px;
   }

@@ -96,7 +96,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-top: -140px;
-    padding: 157px 12% 25px 12%;
+    padding: 157px 11.8% 25px 12.2%;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,6 +116,15 @@
   text-align: center;
   color: $basic-white;
   background-color: $basic-green;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-dark-green;
+  }
+
+  &:active {
+    color: $button-active;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 12%;
