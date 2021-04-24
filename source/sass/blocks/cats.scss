@@ -211,6 +211,15 @@
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $basic-black;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $control-active;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
