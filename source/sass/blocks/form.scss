@@ -423,6 +423,19 @@
   }
 }
 
+.form__tick {
+  position: absolute;
+  display: none;
+  top: 5px;
+  left: -40px;
+  width: 18px;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: -47px;
+  }
+}
 
 .form__complementary-label {
   position: relative;
@@ -439,6 +452,10 @@
     border: 1px solid $special-grey;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       top: -18%;
@@ -447,6 +464,10 @@
       height: 40px;
     }
   }
+}
+
+.form__complementary-label input:checked ~ .form__tick {
+  display: block;
 }
 
 .form__label {
@@ -464,7 +485,7 @@
   }
 }
 
-.form__label[for="weight"] {/*внутренний перфекционист негодует*/
+.form__label[for="weight"] {
   margin-right: 6%;
 
   @media (min-width: $tablet-width) {
@@ -507,7 +528,7 @@
 
   &:focus {
     border: 1px solid $special-dark-grey;
-  }/*цвет при error на js*/
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 52px;
@@ -574,7 +595,7 @@
   }
 }
 
-.form__button { /* андрей сделал миксин :D */
+.form__button {
   @include button;
   width: 100%;
   margin-bottom: 20px;
