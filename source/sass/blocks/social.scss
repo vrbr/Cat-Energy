@@ -6,14 +6,14 @@
   min-height: 63px;
   margin-left: 6.25%;
   margin-right: 6.25%;
-  padding: 20px 76px 16px 73px;
+  padding: 24px 76px 16px 73px;
   align-items: center;
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 0 5px 0 30px;
+    padding: 3px 0 0 27px;
     border: none;
   }
 }
@@ -28,21 +28,21 @@
   margin-right: 36px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 25px;
+    margin-right: 28px;
   }
 }
 
 .social__item--instagram {
-  margin-right: 34px;
+  margin-right: 40px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 20px;
+    margin-right: 23px;
   }
 }
 
 /* ссылки */
 
-.social__link-vkontakte {
+.social__link-icon-vk {
   fill: $special-medium-grey;
 
   @media (min-width: $tablet-width) {
@@ -51,7 +51,7 @@
   }
 }
 
-.social__link-instagram {
+.social__link-icon-insta {
   fill: $special-medium-grey;
 
   @media (min-width: $tablet-width) {
@@ -60,9 +60,8 @@
   }
 }
 
-.social__link-facebook {
-  fill: none;
-  stroke: $special-medium-grey;
+.social__link-icon-fb {
+  fill: $special-medium-grey;
 
   @media (min-width: $tablet-width) {
     width: 28px;
@@ -72,20 +71,17 @@
 
 /* действие */
 
-.social__link:hover .social__link-facebook,
-.social__link:focus .social__link-facebook {
-  stroke: $basic-green;
-}
-
-.social__link:hover .social__link-vkontakte,
-.social__link:hover .social__link-instagram,
-.social__link:focus .social__link-vkontakte,
-.social__link:focus .social__link-instagram {
+.social__link:hover .social__link-icon-vk,
+.social__link:hover .social__link-icon-insta,
+.social__link:focus .social__link-icon-vk,
+.social__link:focus .social__link-icon-insta,
+.social__link:hover .social__link-icon-fb,
+.social__link:focus .social__link-icon-fb {
   fill: $basic-green;
 }
 
-.social__link:active .social__link-vkontakte,
-.social__link:active .social__link-instagram,
-.social__link:active .social__link-facebook {
+.social__link:active .social__link-icon-vk,
+.social__link:active .social__link-icon-insta,
+.social__link:active .social__link-icon-fb {
   opacity: 0.3;
 }

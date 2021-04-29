@@ -1,11 +1,11 @@
 .page-footer__wrapper {
-  padding-top: 39px;
+  padding-top: 41px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 38px 3.9% 28px;
+    padding: 40px 3.9% 29px;
   }
 
   @media (min-width: $desktop-width) {

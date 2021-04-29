@@ -14,17 +14,17 @@
     padding-top: 14px;
   }
 
-  &:hover .copyright__icon,
-  &:focus .copyright__icon {
+  &:hover .copyright__logo-html,
+  &:focus .copyright__logo-html {
     fill: $basic-green;
   }
 
-  &:active .copyright__icon {
+  &:active .copyright__logo-html {
     opacity: 0.3;
   }
 }
 
-.copyright__icon {
+.copyright__logo-html {
   fill: $special-medium-grey;
 }
 

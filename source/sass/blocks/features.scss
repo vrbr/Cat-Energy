@@ -71,19 +71,19 @@
   }
 
   &--leaf::before {
-    background-image: url("../img/main/leaf.svg");
+    background-image: url("../img/icons/leaf.svg");
   }
 
   &--powder::before {
-    background-image: url("../img/main/powder.svg");
+    background-image: url("../img/icons/powder.svg");
   }
 
   &--dining::before {
-    background-image: url("../img/main/dining.svg");
+    background-image: url("../img/icons/dining.svg");
   }
 
   &--clock::before {
-    background-image: url("../img/main/clock.svg");
+    background-image: url("../img/icons/clock.svg");
   }
 
   &:last-child {
@@ -118,8 +118,8 @@
       z-index: 1;
     }
 
-    &--leaf::before {/*не нравится дублирование свгшек*/
-      background-image: url("../img/main/leaf.svg");
+    &--leaf::before {
+      background-image: url("../img/icons/leaf.svg");
     }
 
     &--leaf::after {
@@ -128,7 +128,7 @@
     }
 
     &--powder::before {
-      background-image: url("../img/main/powder.svg");
+      background-image: url("../img/icons/powder.svg");
     }
 
     &--powder::after {
@@ -137,7 +137,7 @@
     }
 
     &--dining::before {
-      background-image: url("../img/main/dining.svg");
+      background-image: url("../img/icons/dining.svg");
     }
 
     &--dining::after {
@@ -146,7 +146,7 @@
     }
 
     &--clock::before {
-      background-image: url("../img/main/clock.svg");
+      background-image: url("../img/icons/clock.svg");
     }
 
     &--clock::after {
