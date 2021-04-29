@@ -135,6 +135,15 @@
     background-color: $basic-white;
     border: 1px solid $border-goods;
     border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    border: 1px solid $border-label;
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
@@ -261,14 +270,22 @@
 .form__icon {
   position: absolute;
 
-  &--email {
+  &--icon-email {
     top: 29px;
     right: 5.3%;
+
+    &:focus {
+      fill: $basic-green;
+    }
   }
 
-  &--phone {
+  &--icon-phone {
     top: 27px;
     right: 4.6%;
+
+    &:focus {
+      fill: $basic-green;
+    }
   }
 
   @media (min-width: $tablet-width) {
