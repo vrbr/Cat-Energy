@@ -14,7 +14,7 @@
   position: relative;
   width: 320px;
   height: 240px;
-  margin: 0 auto 19px;
+  margin: 0 auto 25px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
 
 .cats__item-before {
   top: 0;
-  left: 0;
+  left: -5px;
 
   @media (min-width: $tablet-width) {
     top: 0;
