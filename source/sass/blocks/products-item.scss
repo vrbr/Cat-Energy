@@ -19,18 +19,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin: 0 40px 143px;
-
-    &:nth-child(6),
-    &:nth-child(7) {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.products-item--last {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 100px 40px 43px;
   }
 }
 

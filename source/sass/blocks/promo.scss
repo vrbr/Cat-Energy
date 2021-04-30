@@ -1,4 +1,10 @@
 .promo {
+  background-image: linear-gradient($basic-green 0, $basic-green 302px, $basic-white 302px);
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: -132px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 720px, rgba(104, 183, 56, 0.85) 694px), url("../img/main/promo-background-desk@1x.jpg");
