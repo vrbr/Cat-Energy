@@ -1,5 +1,6 @@
 .form__wrapper {
   padding-bottom: 32px;
+  overflow: hidden;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -273,19 +274,11 @@
   &--icon-email {
     top: 29px;
     right: 5.3%;
-
-    &:focus {
-      fill: $basic-green;
-    }
   }
 
   &--icon-phone {
     top: 27px;
     right: 4.6%;
-
-    &:focus {
-      fill: $basic-green;
-    }
   }
 
   @media (min-width: $tablet-width) {
@@ -473,6 +466,10 @@
     opacity: 0.3;
   }
 
+  &:hover::before {
+    border: 1px solid $border-label;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       top: -18%;
@@ -545,6 +542,10 @@
 
   &:focus {
     border: 1px solid $special-dark-grey;
+  }
+
+  &:focus + .form__icon {
+    fill: $basic-green;
   }
 
   @media (min-width: $tablet-width) {
@@ -621,6 +622,16 @@
   font-size: 16px;
   color: $basic-white;
   background-color: $basic-green;
+
+  &:hover,
+  &:focus {
+    background-color: $basic-dark-green;
+  }
+
+  &:active {
+    color: $button-active;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     width: 45%;
