@@ -11,6 +11,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
   }
 }
@@ -83,8 +84,7 @@
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
     width: 570px;
-    margin-top: 82px;
-    margin-bottom: 71px;
+    margin: 82px 3.8% 71px;
     padding: 80px 0 58px 52px;
 
     &::before {
@@ -96,12 +96,12 @@
       height: 100px;
     }
 
-    &:first-child {
+    &:nth-child(2n+1) {
       margin-left: 110px;
       margin-right: 25px;
     }
 
-    &:last-child {
+    &:nth-child(2n) {
       margin-right: 110px;
       margin-bottom: 71px;
     }

@@ -66,7 +66,7 @@
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     border: none;
   }
 }
@@ -98,7 +98,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 29px 0 0 86px;
+    padding: 29px 0 25px 86px;
   }
 }
 
@@ -220,7 +220,7 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 78px;
     padding-bottom: 54px;
   }
 

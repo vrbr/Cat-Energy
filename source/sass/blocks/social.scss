@@ -2,11 +2,12 @@
   @include list-style;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   box-sizing: border-box;
   min-height: 63px;
   margin-left: 6.25%;
   margin-right: 6.25%;
-  padding: 24px 76px 16px 73px;
+  padding: 24px 79px 16px 73px;
   align-items: center;
   border-top: 1px solid $border-social;
   border-bottom: 1px solid $border-social;
